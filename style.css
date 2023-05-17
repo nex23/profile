@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,300&family=Wix+Madefor+Display:wght@400;500;700&display=swap');
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #edf2f4;
+  font-size: 17px;
+  color: #457b9d;
+  line-height: normal;
+  text-align: center;
+}
+
+h1, h2, h3{
+  color: #415a77;
+  font-weight: 700;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+p{
+  font-family: 'Wix Madefor Display', sans-serif;
+  padding-bottom: 20px;
+}
+
+h2, h3{
+  font-size: 25px;
+}
+
+.network i{
+  color: #fff;
+  align-items: center;
+}
+
+ul{
+  padding: 0;
+  margin: 50px;
+}
+
+.network li{
+  list-style: none;
+  padding: 15px;
+  font-size: 30px;
+  display: inline-block;
+  background-color: #468faf;
+  border-radius: 50%;
+  margin: 3px;
+}
+
+.network li:hover{
+  background-color: #a8dadc;
+  color: #415a77;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.container{
+  margin-top: 40px;
+  width: 750px;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.card{
+  background-color: #fff;
+  padding: 50px 40px 50px 30px;
+  margin-top: 20px;
+  border-color: #a8dadc;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+button i{
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+button{
+  background-color: #415a77;
+  cursor: pointer;
+  border: 2px solid #415a77;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  border-radius: 5px;
+}
+button .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #468faf;
+  z-index: -1;
+  transition: .2s;
+}
+
+button:hover .overlay{
+  width: 100%;
+}
+
+@keyframes pulse {
+  from {
+      box-shadow: 0 0 25px #7effb2, 0 0 50px #2cd9ff;
+  }
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
+}
